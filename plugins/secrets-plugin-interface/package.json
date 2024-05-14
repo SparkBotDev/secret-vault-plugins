@@ -1,6 +1,6 @@
 {
 	"name": "@sparkbot/secrets-plugin-interface",
-	"version": "0.1.0-alpha.0",
+	"version": "0.2.0",
 	"description": "Interface for Spark⚡️Bot secrets vault plugins.",
 	"author": "Brian Lister <brian@sparkforge.dev> (https://sparkforge.dev)",
 	"homepage": "https://github.com/SparkBotDev/secret-vault-plugins/tree/main/plugins/secrets-plugin-interface#readme",
