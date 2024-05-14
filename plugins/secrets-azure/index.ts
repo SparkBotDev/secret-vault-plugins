@@ -2,7 +2,7 @@ import type { SecretsPlugin } from '@sparkbot/secrets-plugin-interface';
 import { SecretClient } from '@azure/keyvault-secrets';
 import { DefaultAzureCredential } from '@azure/identity';
 
-export class AzureSecrets implements SecretsPlugin {
+export class SecretsVault implements SecretsPlugin {
 	client: SecretClient;
 
 	constructor(readonly options: { vaultURL: string }) {
