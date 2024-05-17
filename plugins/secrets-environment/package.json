@@ -1,6 +1,6 @@
 {
 	"name": "@sparkbot/secrets-environment",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Official Spark⚡️Bot secrets vault plugin which retrieves values from environment variables.",
 	"author": "Brian Lister <brian@sparkforge.dev> (https://sparkforge.dev)",
 	"homepage": "https://github.com/SparkBotDev/secret-vault-plugins/tree/main/plugins/secrets-environment#readme",
