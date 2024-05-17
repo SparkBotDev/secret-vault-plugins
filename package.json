@@ -8,6 +8,7 @@
 		"type": "git",
 		"url": "git@github.com:SparkBotDev/secrets-vault-plugins.git"
 	},
+	"type": "module",
 	"private": true,
 	"workspaces": [
 		"plugins/*"

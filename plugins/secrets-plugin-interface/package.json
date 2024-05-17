@@ -13,5 +13,6 @@
 		"directory": "plugins/secrets-plugin-interface"
 	},
 	"license": "MIT",
-	"main": "index.js"
+	"main": "index.ts",
+	"type": "module"
 }

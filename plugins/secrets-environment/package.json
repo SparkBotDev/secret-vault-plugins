@@ -13,8 +13,9 @@
 		"directory": "plugins/secrets-environment"
 	},
 	"license": "MIT",
-	"main": "index.js",
+	"type": "module",
+	"main": "index.ts",
 	"dependencies": {
-		"@sparkbot/secrets-plugin-interface": "latest"
+		"@sparkbot/secrets-plugin-interface": "^0.3.0"
 	}
 }

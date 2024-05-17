@@ -14,8 +14,15 @@ We would love to have plugins for other systems created. You can either add it t
 
 ## Using a plugin
 
-The readme for each plugin will have detailed instructions on its use.  In general you will need to add the plugin using `bun add` and then edit `sparkbot.config.ts` with the package name and any required options.
+The readme for each plugin will have detailed instructions on its use. In general you will need to add the plugin using `bun add` and then edit `sparkbot.config.ts` with the package name and any required options.
 
 ## Creating a plugin
 
 Creating a plugin requires implementing the [SecretsPlugin](https://github.com/SparkBotDev/secret-vault-plugins/tree/main/plugins/secrets-plugin-interface#readme) interface.
+
+> [!IMPORTANT]
+> Your plugin must export a class called SecretsVault
+
+```ts
+export class SecretsVault implements SecretsPlugin {}
+```

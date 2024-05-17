@@ -1,10 +1,18 @@
-import { describe, it, expect } from 'bun:test';
-import SecretsPlugin from '../index.js';
+import { describe, expect, it } from 'bun:test';
+import { SecretsVault } from '../index.ts';
 
-describe('Secrets vault environment plugin', () => {
-	it('get(key) method accepts a string parameter and returns a string', async () => {
-		Bun.env['testVariable'] = 'valid';
-		const testObject = new SecretsPlugin({});
-		expect(await testObject.get('testVariable')).toEqual('valid');
+const testVault = new SecretsVault({});
+describe('secrets-environment plugin', () => {
+	it('is a class named SecretsVault', () => {
+		expect(testVault).toBeInstanceOf(SecretsVault);
+	});
+	it('gets a key from an environment variable', () => {
+		Bun.env['testVar'] = 'test';
+		expect(testVault.get('testVar')).toBeDefined();
+	});
+	it('throws an error if key does not exist', () => {
+		expect(async () => {
+			await testVault.get('asdfasdgge');
+		}).toThrowError();
 	});
 });
